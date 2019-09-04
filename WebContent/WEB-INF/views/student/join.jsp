@@ -9,20 +9,19 @@
 </head>
 <body>
 <div>
-	<h2>대학login</h2>
+	<h2>대학join</h2>
 	<h3>주민번호와 이름을 입력해 주세요</h3>
-	<form id="login_form" action="<%=request.getContextPath()%>/student.do">
-	학번 : <input type="text" name="numseq"/>
+	<form id="join_form" action="<%=request.getContextPath()%>/student.do">
+	주민번호 : <input type="text" name="rrn"/>
 	이름 : <input type="text" name="name"/>
-	<input type="hidden" name="action" value="move" />
-	<input type="hidden" name="dest" value="register" />
-	<input type="hidden" name="directory" value="grade" />
+	<input type="hidden" name="action" value="join" />
+	<input type="hidden" name="dest" value="index" />
 	<input type="submit" id="btn" value="전송" />
 	</form>
 </div>
 <script>
-$('#login_form').submit(function() {
-	alert('login잘 실행~');
+$('#join_form').submit(function() {
+	alert('join잘 실행~');
 });
 </script>
 </body>

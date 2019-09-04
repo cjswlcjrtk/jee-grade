@@ -30,7 +30,7 @@ $('#btn').click(function(){
 
 $('#a_register').click(function() {
    alert('학생부등록');
-   location.assign('<%=request.getContextPath()%>/student.do?action=move&directory=grade&dest=register'); 
+   location.assign('<%=request.getContextPath()%>/student.do?action=move&directory=student&dest=join'); 
 });
 </script>
 </body>

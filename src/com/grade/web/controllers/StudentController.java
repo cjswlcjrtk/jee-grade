@@ -27,7 +27,7 @@ public class StudentController extends HttpServlet {
 							request.getParameter("directory"),
 							request.getParameter("dest"))).forward(request, response);			
 			break;				
-		case "login" :
+		case "join" :
 			System.out.println("login까지 잘 오나?");	
 			String rrn = request.getParameter("rrn");
 			String name = request.getParameter("name");
@@ -42,10 +42,11 @@ public class StudentController extends HttpServlet {
 			System.out.println("toString찍어봄 ==> " + param.toString());
 			request.getRequestDispatcher(
 					String.format(
-							Constants.VIEW_PATH,
-							request.getParameter("directory"),
+							Constants.INDEX_PATH,
 							request.getParameter("dest"))).forward(request, response);	
-			break;		
+			break;
+//		case "login" :
+//			break;
 		}
 	}
 	
